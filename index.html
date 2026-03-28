@@ -6,7 +6,34 @@
     <script src="script.js"></script>
     <title>Document</title>
 </head>
+<style>
+    .userChoice{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    #info{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+</style>
 <body>
-    
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="userChoice">
+        <button id="rock" style="width:200px; height:200px; background-color: red;">Rock</button>
+        <button id="paper" style="width:200px; height:200px; background-color: lightblue;">Paper</button>
+        <button id="scissors" style="width:200px; height:200px; background-color: yellow;">Scissors</button>
+    </div>
+    <div id="info">
+        <p id="score">Your score: </p>
+        <p id="cpuScore">CPU score: </p>
+        <p id="winner"></p>
+    </div>
 </body>
 </html>
